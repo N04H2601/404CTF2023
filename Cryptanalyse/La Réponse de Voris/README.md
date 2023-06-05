@@ -10,26 +10,7 @@
 
 ## Solution
 
-Pour résoudre ce challenge, la seule difficulté était de trouver le bon [tool](https://pypi.org/project/ascon/) à utiliser. On pouvait ensuite réaliser un simple script pour déchiffrer le message car nous avions toutes les informations nécessaires.
-
-```py
-import ascon
-
-
-key = bytes.fromhex("00456c6c616e61206427416c2d466172")
-nonce = bytes.fromhex("00000000000000000000000000000000")
-data = bytes.fromhex("80400c0600000000")
-cipher = bytes.fromhex(
-    "ac6679386ffcc3f82d6fec9556202a1be26b8af8eecab98783d08235bfca263793b61997244e785f5cf96e419a23f9b29137d820aab766ce986092180f1f5a690dc7767ef1df76e13315a5c8b04fb782")
-
-print(f"Key: {key}")
-print(f"Nonce: {nonce}")
-print(f"Ciphertext: {cipher}")
-print(f"Data: {data}")
-
-plaintext = ascon.decrypt(key, nonce, data, cipher, variant="Ascon-128")
-print(f"Plaintext: {plaintext}")
-```
+Pour résoudre ce challenge, il faut s'appuyer sur la méthode que l'on a appliqué pour le challenge [Le Jour de l'espace](../Le%20Jour%20de%20l'espace/README.md).
 
 ## Flag
 
@@ -37,5 +18,5 @@ print(f"Plaintext: {plaintext}")
 <summary>🚩</summary>
 
 ```
-404CTF{V3r5_l4_lum1èr3.}
+404CTF{}
 ```
