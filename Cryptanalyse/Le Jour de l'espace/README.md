@@ -47,7 +47,7 @@ import numpy as np
 A = np.array([[9, 4, 18, 20, 8], [11, 0, 2, 1, 3], [5, 6, 7, 10, 12], [
              13, 14, 15, 16, 17], [19, 21, 22, 23, 24]])
 
-# compute modular inverse of matrix A (mod 25)
+# Fonction qui calcule l'inverse d'une matrice (modulo 25)
 def computeInversemod25(A):
     A = np.matrix(A)
     det = int(np.round(np.linalg.det(A)))
