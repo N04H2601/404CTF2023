@@ -15,6 +15,7 @@
 ## Solution
 
 A la fin de l'image on peut voir clairement le message codé mais avec des morceaux manquants. Les morceaux manquants sont des bandes de couleur (rouge, bleu, vet et blanc). Il faut donc déterminer les 3 chiffres cachés derrière chaque bande de couleur pour reconstituer le message :
+
 Ci-après le message avec WWW pour white, RRR pour red, GGG pour green et BBB pour blue :
 
 
@@ -23,6 +24,7 @@ Ci-après le message avec WWW pour white, RRR pour red, GGG pour green et BBB po
 ```
 
 Afin de reconstituer le message j'ai commencé par déchiffrer ce qui nous était connu :
+
 Pour le début en déchiffrant de décimal vers ASCII on obtient :
 
 ```
