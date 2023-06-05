@@ -34,7 +34,7 @@ print(f"404CTF{{{mtalk.decode(morse)}}}")
 ## Flag
 
 <details>
-<summary>Flag</summary>
+<summary>🚩</summary>
 
 ```
 404CTF{FACILELEMORSE}
