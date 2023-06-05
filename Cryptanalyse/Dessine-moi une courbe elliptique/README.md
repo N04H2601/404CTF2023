@@ -47,7 +47,7 @@
 
 En lisant le script Python associé au chall, on peut voir que l'on chiffre un message à l'aide de l'algorithme AES-CBC. On peut voir également que nous n'avons pas les valeurs de ``a`` et ``b``, cependant la somme de ces valeurs donnent la clé à utiliser pour l'AES. Il faut donc la déterminer, en sachant que l'on a également les coordonnées de deux point sur la courbe elliptique.
 
-C'est alors que j'ai trouvé exactement ce que je cherchais sur un [forum de cryptographie](https://crypto.stackexchange.com/questions/97811/find-elliptic-curve-parameters-a-and-b-given-two-points-on-the-curve), à savoir comment déterminer les paramètres ``a`` et ``b`` d'une courbe elliptique à partir de des coordonnées de deux points sur la courbe : $a = [(y_1^2 - y_2^2) - (x_1^3 - x_2^3)] * (x_1 - x_2)^-1$
+C'est alors que j'ai trouvé exactement ce que je cherchais sur un [forum de cryptographie](https://crypto.stackexchange.com/questions/97811/find-elliptic-curve-parameters-a-and-b-given-two-points-on-the-curve), à savoir comment déterminer les paramètres ``a`` et ``b`` d'une courbe elliptique à partir de des coordonnées de deux points sur la courbe : $$a = [(y_1^2 - y_2^2) - (x_1^3 - x_2^3)] * (x_1 - x_2)^-1$$
 
 ## Flag
 
