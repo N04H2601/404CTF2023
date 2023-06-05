@@ -3,6 +3,7 @@
 **Catégorie** : Introduction | **Points** : 100 | **Solves** : 582
 
 ## Description
+
 *« Bonjour à toi, et bienvenue au café littéraire ! »*
 
 *Connais-tu la première règle de la lecture ? Ne pas s'attacher aux mots. Il faut les surpasser, chercher l'idée derrière. L'existence précède l'essence, ici nous cherchons l'essence des choses, et non pas leur existence ou leur forme.*
