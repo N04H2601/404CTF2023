@@ -1,6 +1,6 @@
 # Le Rouge et le vert, avec un soupçon de bleu
 
-**Catégorie** : Moyen | **Points** : 961 | **Solves** : 78
+**Catégorie** : Difficile | **Points** : 927 | **Solves** : 107
 
 ## Description
 
@@ -14,9 +14,37 @@
 
 ## Solution
 
-A première vue, on ne discerne pas vraiment ce qu'il faut faire pour ce challenge. Cependant, j'ai remarqué que les espaces ne concordaient pas parfaitement dans les deux textes. Je les ai donc visualisé avec un [outil](https://vii5ard.github.io/whitespace/) en ligne pour surligner les espaces :
+A la fin de l'image on peut voir clairement le message codé mais avec des morceaux manquants. Les morceaux manquants sont des bandes de couleur (rouge, bleu, vet et blanc). Il faut donc déterminer les 3 chiffres cachés derrière chaque bande de couleur pour reconstituer le message :
+Ci-après le message avec WWW pour white, RRR pour red, GGG pour green et BBB pour blue :
 
-On peut remarquer que le pattern n'est pas similaire pour certains mots dans les deux blocs de texte, notamment : Paris, Marseille, Allemagne... J'ai donc relevé les mots qui avaient le même pattern dans le bloc de gauche (un espace à gauche du mot et deux après).
+
+```
+76WWW321021089710332WWW115116581089795118RRRWWW95WWW1109599BBBGGG108WWWGGG114115125
+```
+
+Afin de reconstituer le message j'ai commencé par déchiffrer ce qui nous était connu :
+Pour le début en déchiffrant de décimal vers ASCII on obtient :
+
+```
+L* flag
+```
+On en déduit très simplement que WWW ser égal à ``e`` en décimal (101). On peut donc déchiffrer un peu plus de texte :
+
+```
+76101321021089710332101115116581089795118RRR101951011109599BBBGGG108101GGG114115125
+```
+
+On déchiffre et on détermine la valeur de RRR :
+
+```
+Le flag est:la_v*e_en_c
+```
+
+On identifie aisément que RRR correspond à la lettre ``i`` en décimal (105). On répète les mêmes opérations pour les valeurs de GGG et BBB et on obtient finalement :
+
+```
+Le flag est:la_vie_en_couleurs
+```
 
 ## Flag
 
@@ -24,5 +52,5 @@ On peut remarquer que le pattern n'est pas similaire pour certains mots dans les
 <summary>🚩</summary>
 
 ```
-404CTF{paris_finlande_15_6_avion}
+404CTF{la_vie_en_couleurs}
 ```
