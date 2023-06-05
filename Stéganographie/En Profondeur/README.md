@@ -10,7 +10,9 @@
 
 A première vue, on ne discerne pas vraiment ce qu'il faut faire pour ce challenge. Cependant, j'ai remarqué que les espaces ne concordaient pas parfaitement dans les deux textes. Je les ai donc visualisé avec un [outil](https://vii5ard.github.io/whitespace/) en ligne pour surligner les espaces :
 
-![whitespace](whitespace.png)
+<p align="center">
+  <img src="whitespace.png" alt="en profondeur" width="600">
+</p>
 
 On peut remarquer que le pattern n'est pas similaire pour certains mots dans les deux blocs de texte, notamment : Paris, Marseille, Allemagne... J'ai donc relevé les mots qui avaient le même pattern dans le bloc de gauche (un espace à gauche du mot et deux après).
 
