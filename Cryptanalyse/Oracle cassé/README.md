@@ -50,7 +50,7 @@ print(gcd(n, pow(m_10, e, n) - 10))
 # Output: 126201398751888100159434186321762278203199440355009847538167424401257207961817478825988569670802124131816975212449246962274697200347497176199003066659969884502150284856278390292556072268851696390295087877075131847755893431888541039741657995405755616945118784135632035726665016429693052931862180711433201887969
 ```
 
-On a donc identifié un facteur non trivial de N. Il ne reste plus qu'à déchiffrer le cipher donné lors de la connexion netcat grâce à [dCode](https://www.dcode.fr/chiffre-rsa) et on obtiens le flag.
+On a donc identifié un facteur non trivial de N. Il ne reste plus qu'à déchiffrer le cipher donné lors de la connexion netcat grâce à [dCode](https://www.dcode.fr/chiffre-rsa) et on obtient le flag.
 
 ## Flag
 
