@@ -37,7 +37,7 @@ A * I[:, 0] = [a31, a32, a33, a34, a35] * [0] = Y = [a31]
               [a51, a52, a53, a54, a55]   [0]       [a51]
 ```
 
-Et voilà comment identifier la première colonne de A. On peut faire la même chose pour les 4 autres colonnes et on obtient la matrice ``A``.
+Et voilà comment identifier la première colonne de ``A``. On peut faire la même chose pour les 4 autres colonnes et on obtient la matrice ``A``.
 
 Enfin, on calcule l'inverse de ``A`` modulo 25 et on déchiffre le message donné dans l'énoncé.
 
