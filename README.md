@@ -3,8 +3,8 @@
 </p>
 <h1 align="center">404CTF 2023</h1>
 <p align="center">
-  This is the second edition of the 404CTF organized by HackademINT, the cybersecurity club at Télécom SudParis.
+  Ceci est la deuxième édition du 404CTF, organisé par HackademINT, le club de cybersécurité de Télécom SudParis.
 </p>
 <p align="center">
-  Here you'll find some write-ups of the various challenges.
+  Vous pouvez retrouver ici des writeups des challenges de cette édition.
 </p>
