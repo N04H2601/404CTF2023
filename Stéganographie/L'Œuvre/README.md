@@ -7,7 +7,9 @@
 
 *Trouvez un message secret dans la peinture ci-jointe.*
 
-<img src="loeuvre.png" alt="l'oeuvre" width="600" align="center" />
+<p align="center">
+  <img src="loeuvre.png" alt="l'oeuvre" width="600">
+</p>
 
 ## Solution
 
