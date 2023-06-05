@@ -25,6 +25,7 @@ Pour résoudre ce challenge, la seule difficulté était de trouver le bon [tool
 ```py
 import ascon
 
+
 key = bytes.fromhex("00456c6c616e61206427416c2d466172")
 nonce = bytes.fromhex("00000000000000000000000000000000")
 data = bytes.fromhex("80400c0600000000")
@@ -35,6 +36,9 @@ print(f"Key: {key}")
 print(f"Nonce: {nonce}")
 print(f"Ciphertext: {cipher}")
 print(f"Data: {data}")
+
+plaintext = ascon.decrypt(key, nonce, data, cipher, variant="Ascon-128")
+print(f"Plaintext: {plaintext}")
 ```
 
 ## Flag
