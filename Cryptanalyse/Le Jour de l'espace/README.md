@@ -19,7 +19,7 @@ On peut également vérifier ça en envoyant des vecteurs en clair à l'oracle d
 
 Maintenant que l'on a identifié le chiffrement et son fonctionnement, comme on connaît les valeurs de ``X`` (notre vecteur en clair que l'on envoit à l'oracle) et ``Y`` (le vecteur chiffré que l'on reçoit de l'oracle), le but est de trouver la matrice ``A`` pour pouvoir ensuite déchiffrer le message donné dans l'énoncé. En effet, une fois que l'on a identifié A, on peut calculer son inverse (modulo 25) ``A ** -1`` et donc déchiffrer le message en faisant ``X = A ** -1 * Y``.
 
-Pour ce faire, j'ai simplement eu besoin de ressortir mes cours d'espaces vectoriels sur le calcul matriciel et réfléchir un petit peu. En effet, le but ici est de trouver la matrice ``A`` en sachant que l'on peut envoyer un vecteur ``X`` et recevoir son chiffré ``Y``. Je sais qu'une matrice multiplié par la matrice identité me donne cette même matrice (la matrice identité est constitué de 0 partout avec des 1 sur la diagonale principale). Sauf qu'ici, je ne peux envoyer que des vecteurs. Mais ça n'est pas un problème :)
+Pour ce faire, j'ai simplement eu besoin de ressortir mes cours d'espaces vectoriels sur le calcul matriciel et réfléchir un petit peu. En effet, le but ici est de trouver la matrice ``A`` en sachant que l'on peut envoyer un vecteur ``X`` et recevoir son chiffré ``Y``. Je sais qu'une matrice multipliée par la matrice identité me donne cette même matrice (la matrice identité est constitué de 0 partout avec des 1 sur la diagonale principale). Sauf qu'ici, je ne peux envoyer que des vecteurs. Mais ça n'est pas un problème :)
 
 En effet, je n'ai qu'à envoyer chaque colonne de ma matrice identité séparément.
 
