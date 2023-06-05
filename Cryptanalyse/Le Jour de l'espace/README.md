@@ -14,11 +14,17 @@
 ## Solution
 
 Dans l'énoncé on nous parle d'un cadre de 50cm avec des carrés de 10cm de côté. On peut donc identifier une grille de 5x5 dans lequel on peut placer les lettres de ``a`` à ``y`` avec ``a = 0`` et ``y = 24``. Ce chiffrement est appelé le [chiffre de Hill](https://fr.wikipedia.org/wiki/Chiffre_de_Hill) : ``Y = AX`` avec ``Y`` le vecteur chiffré, ``A`` la matrice de chiffrement et ``X`` le vecteur clair.
+
 On peut également vérifier ça en envoyant des vecteurs en clair à l'oracle de chiffrement (5 lettres par 5 lettres car on a une matrice 5x5) : en envoyant ``aaaaa`` on obtient en sortie ``aaaaa``, ce qui est normal car on envoie en réalité le vecteur nul ``X = (0, 0, 0, 0, 0)`` en entrée comme ``a = 0`` donc on aura en sortie ``Y = A * 0 = 0`` d'où le fait que ``Y`` soit aussi égal à ``aaaaa``.
+
 Maintenant que l'on a identifié le chiffrement et son fonctionnement, comme on connaît les valeurs de ``X`` (notre vecteur en clair que l'on envoit à l'oracle) et ``Y`` (le vecteur chiffré que l'on reçoit de l'oracle), le but est de trouver la matrice ``A`` pour pouvoir ensuite déchiffrer le message donné dans l'énoncé.En effet, une fois que l'on a identifié A, on peut calculer son inverse (modulo 25) ``A ** -1`` et donc déchiffrer le message en faisant ``X = A ** -1 * Y``.
+
 Pour ce faire, j'ai simplement eu besoin de ressortir mes cours d'espaces vectoriels sur le calcul matriciel et réfléchir un petit peu. En effet, le but ici est de trouver la matrice ``A`` en sachant que l'on peut envoyer un vecteur ``X`` et recevoir son chiffré ``Y``. Je sais qu'une matrice multiplié par la matrice identité me donne cette même matrice (la matrice identité est constitué de 0 partout avec des 1 sur la diagonale principale). Sauf qu'ici, je ne peux envoyer que des vecteurs. Mais ça n'est pas un problème :)
+
 En effet, je n'ai qu'à envoyer chaque colonne de ma matrice identité séparément.
+
 Un petit exemple pour le premier vecteur de la matrice identité (``(1, 0, 0, 0, 0)``) : je l'envoie à l'oracle et je récupère le vecteur chiffré ``Y``. Je sais que ``Y = A * (1, 0, 0, 0, 0)``. Je peux donc en déduire la première colonne de ``A``. Je fais la même chose pour les 4 autres colonnes et j'obtiens la matrice ``A``.
+
 En effet :
 
 ```
