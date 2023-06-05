@@ -20,10 +20,30 @@ Suivi de la séquence : 32 69 31 73 34 69 31 73 31 35 64 31 6f 34 39 69 31 6f 34
 
 ## Solution
 
-A première vue, on ne discerne pas vraiment ce qu'il faut faire pour ce challenge. Cependant, j'ai remarqué que les espaces ne concordaient pas parfaitement dans les deux textes. Je les ai donc visualisé avec un [outil](https://vii5ard.github.io/whitespace/) en ligne pour surligner les espaces :
+Pour résoudre ce challenge il suffit de suivre les instructions.
+On commence par déchiffrer l'hexadécimal :
 
+```
+2i1s4i1s15d1o49i1o4d1o3i1o15d1o22d1o20d1o19i1o7d1o5d1o2i1o55i1o1d1o19d1o17d1o18d1o29i1o12i1o26i1o8d1o59d1o27i1o6d1o17i1o12d1o7d1o5i1o1d1o2d1o12i1o9d1o26d1o
+```
 
-On peut remarquer que le pattern n'est pas similaire pour certains mots dans les deux blocs de texte, notamment : Paris, Marseille, Allemagne... J'ai donc relevé les mots qui avaient le même pattern dans le bloc de gauche (un espace à gauche du mot et deux après).
+Ensuite, on développer afin de ne plus avoir de chiffres (c'était la paertie compliquée du challenge car il fallait comprendre ce que l'on entendait par "développer", par exemple pour le début on a ``2i1s`` qui devient 2\*i + 1\*s donc ``iis``, et on répète pour tout le reste) :
+
+```
+iisiiiisdddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiioddddoiiiodddddddddddddddoddddddddddddddddddddddoddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiodddddddodddddoiioiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiododddddddddddddddddddodddddddddddddddddoddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiioiiiiiiiiiiiioiiiiiiiiiiiiiiiiiiiiiiiiiioddddddddodddddddddddddddddddddddddddddddddddddddddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiioddddddoiiiiiiiiiiiiiiiiioddddddddddddodddddddoiiiiiododdoiiiiiiiiiiiiodddddddddoddddddddddddddddddddddddddo
+```
+
+Ensuite, on décode le DeadFish :
+
+```
+1b^aR<(;4/1hgTC1NZtl1LFWKDIHFRI/
+```
+
+Et enfin, on convertit depuis la Base 85 :
+
+```
+404CTF{M4igr3t_D3_c4naRd}
+```
 
 ## Flag
 
@@ -31,5 +51,5 @@ On peut remarquer que le pattern n'est pas similaire pour certains mots dans les
 <summary>🚩</summary>
 
 ```
-404CTF{paris_finlande_15_6_avion}
+404CTF{M4igr3t_D3_c4naRd}
 ```
