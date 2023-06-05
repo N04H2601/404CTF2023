@@ -27,7 +27,7 @@ On commence par déchiffrer l'hexadécimal :
 2i1s4i1s15d1o49i1o4d1o3i1o15d1o22d1o20d1o19i1o7d1o5d1o2i1o55i1o1d1o19d1o17d1o18d1o29i1o12i1o26i1o8d1o59d1o27i1o6d1o17i1o12d1o7d1o5i1o1d1o2d1o12i1o9d1o26d1o
 ```
 
-Ensuite, on développer afin de ne plus avoir de chiffres (c'était la paertie compliquée du challenge car il fallait comprendre ce que l'on entendait par "développer", par exemple pour le début on a ``2i1s`` qui devient 2\*i + 1\*s donc ``iis``, et on répète pour tout le reste) :
+Ensuite, on développe afin de ne plus avoir de chiffre (c'était la partie compliquée du challenge car il fallait comprendre ce que l'on entendait par "développer", par exemple pour le début on a ``2i1s`` qui devient 2\*i + 1\*s donc ``iis``, et on répète pour tout le reste) :
 
 ```
 iisiiiisdddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiioddddoiiiodddddddddddddddoddddddddddddddddddddddoddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiodddddddodddddoiioiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiododddddddddddddddddddodddddddddddddddddoddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiioiiiiiiiiiiiioiiiiiiiiiiiiiiiiiiiiiiiiiioddddddddodddddddddddddddddddddddddddddddddddddddddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiioddddddoiiiiiiiiiiiiiiiiioddddddddddddodddddddoiiiiiododdoiiiiiiiiiiiiodddddddddoddddddddddddddddddddddddddo
