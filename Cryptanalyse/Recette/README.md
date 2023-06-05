@@ -6,6 +6,7 @@
 
 *Le Commissaire Maigret, café à la main, vous raconte une de ses dernières enquêtes. Il vous explique que sur une scène de crime il a retrouvé un papier faisant office de message codé. Il le sort de sa poche pour vous le montrer :*
 
+
 *Convertir depuis l'hexadécimal*
 
 *Développer de sorte à ne plus voir de chiffres*
