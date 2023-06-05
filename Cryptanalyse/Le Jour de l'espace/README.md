@@ -23,7 +23,7 @@ Pour ce faire, j'ai simplement eu besoin de ressortir mes cours d'espaces vector
 
 En effet, je n'ai qu'à envoyer chaque colonne de ma matrice identité séparément.
 
-Un petit exemple pour le premier vecteur de la matrice identité (``(1, 0, 0, 0, 0)``) : je l'envoie à l'oracle et je récupère le vecteur chiffré ``Y``. Je sais que ``Y = A * (1, 0, 0, 0, 0)``. Je peux donc en déduire la première colonne de ``A``. Je fais la même chose pour les 4 autres colonnes et j'obtiens la matrice ``A``.
+Un petit exemple pour le premier vecteur de la matrice identité ``(1, 0, 0, 0, 0)`` : je l'envoie à l'oracle et je récupère le vecteur chiffré ``Y``. Je sais que ``Y = A * (1, 0, 0, 0, 0)``. Je peux donc en déduire la première colonne de ``A``. Je fais la même chose pour les 4 autres colonnes et j'obtiens la matrice ``A``.
 
 En effet :
 
