@@ -47,7 +47,32 @@
 
 En lisant le script Python associé au chall, on peut voir que l'on chiffre un message à l'aide de l'algorithme AES-CBC. On peut voir également que nous n'avons pas les valeurs de ``a`` et ``b``, cependant la somme de ces valeurs donnent la clé à utiliser pour l'AES. Il faut donc la déterminer, en sachant que l'on a également les coordonnées de deux point sur la courbe elliptique.
 
-C'est alors que j'ai trouvé exactement ce que je cherchais sur un [forum de cryptographie](https://crypto.stackexchange.com/questions/97811/find-elliptic-curve-parameters-a-and-b-given-two-points-on-the-curve), à savoir comment déterminer les paramètres ``a`` et ``b`` d'une courbe elliptique à partir de des coordonnées de deux points sur la courbe : $$a = [(y_1^2 - y_2^2) - (x_1^3 - x_2^3)] * (x_1 - x_2)^-1$$
+C'est alors que j'ai trouvé exactement ce que je cherchais sur un [forum de cryptographie](https://crypto.stackexchange.com/questions/97811/find-elliptic-curve-parameters-a-and-b-given-two-points-on-the-curve), à savoir comment déterminer les paramètres ``a`` et ``b`` d'une courbe elliptique à partir de des coordonnées de deux points sur la courbe : $$a = [(y_1^2 - y_2^2) - (x_1^3 - x_2^3)] * (x_1 - x_2)^-1$$ et $$b = (y_1^2 - x_1^3 - a * x_1)$$
+
+Il ne reste qu'à scripter ça pour déterminer le flag :
+
+```py
+from Crypto.Util.number import inverse
+import hashlib
+from Crypto.Cipher import AES
+
+
+x1 = 93808707311515764328749048019429156823177018815962831703088729905542530725
+y1 = 144188081159786866301184058966215079553216226588404139826447829786378964579
+x2 = 139273587750511132949199077353388298279458715287916158719683257616077625421
+y2 = 30737261732951428402751520492138972590770609126561688808936331585804316784
+p = 231933770389389338159753408142515592951889415487365399671635245679612352781
+a = ((y2**2 - y1**2 - (x2**3 - x1**3)) * inverse((x2-x1), p)) % p
+b = (y1**2 - x1**3 - a * x1) % p
+
+iv = bytes.fromhex("00b7822a196b00795078b69fcd91280d")
+flag = bytes.fromhex(
+    "8233d04a29befd2efb932b4dbac8d41869e13ecba7e5f13d48128ddd74ea0c7085b4ff402326870313e2f1dfbc9de3f96225ffbe58a87e687665b7d45a41ac22")
+key = str(a) + str(b)
+aes = AES.new(hashlib.sha1(key.encode()).digest()[:16], AES.MODE_CBC, iv=iv)
+cipher = aes.decrypt(flag)
+print(cipher.decode('utf-8'))
+```
 
 ## Flag
 
@@ -55,5 +80,5 @@ C'est alors que j'ai trouvé exactement ce que je cherchais sur un [forum de cry
 <summary>🚩</summary>
 
 ```
-404CTF{}
+404CTF{70u735_l35_gr4nd35_p3r50nn3s_0nt_d_@b0rd_373_d35_3nf4n7s}
 ```
