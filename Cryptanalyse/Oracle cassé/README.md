@@ -16,7 +16,7 @@
 
 D'apèrs le script python fourni dans l'énoncé, nous sommes face à un oracle de déchiffrement RSA. Ce-dernier utilise une implémentation du Chinese Remainder Theorem (CRT) pour optimiser le déchiffrement (qui permet de le réaliser presque 4 fois plus vite). Cependant, en lisant un [papier](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf) parlant de différentes attaques sur le RSA, je suis tombé sur une attaque concernant le CRT.
 
-En effet, cette attaque est réalisable lorsque d'un des paramètres du CRT a été mal calculé (pour diverses raisons comme un bug, une perturbation magnétique, etc.). Cette attaque fait partie de la section des défaillances aléatoires. J'ai donc implémenté la solution proposée par le [papier](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf) qui consiste à calculer le pgcd suivant : ``gcd(N, M_mal_calculé_par_l'oracle ^ e - C_envoyé_à_l'oracle)``.
+En effet, cette attaque est réalisable lorsque d'un des paramètres du CRT a été mal calculé (pour diverses raisons comme un bug, une perturbation magnétique lors du chiffrement, etc.). Cette attaque fait partie de la section des défaillances aléatoires. J'ai donc implémenté la solution proposée par le [papier](https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf) qui consiste à calculer le pgcd suivant : ``gcd(N, M_mal_calculé_par_l'oracle ^ e - C_envoyé_à_l'oracle)``.
 
 Par exemple :
 
