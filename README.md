@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/N04H/404CTF2023/images/404CTF_Logo.png" alt="404CTF2023 Logo">
+  <img src="images/404CTF_Logo.png" alt="404CTF2023 Logo">
 </p>
 <h1 align="center">404CTF2023</h1>
 <p align="center">
