@@ -7,7 +7,7 @@
 
 *Trouvez un message secret dans la peinture ci-jointe.*
 
-![L'Œuvre](loeuvre.png)
+<img src="loeuvre.png" alt="l'oeuvre" width="400">
 
 ## Solution
 
