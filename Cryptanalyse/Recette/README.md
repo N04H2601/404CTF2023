@@ -6,14 +6,13 @@
 
 *Le Commissaire Maigret, café à la main, vous raconte une de ses dernières enquêtes. Il vous explique que sur une scène de crime il a retrouvé un papier faisant office de message codé. Il le sort de sa poche pour vous le montrer :*
 
+- *Convertir depuis l'hexadécimal*
 
-*Convertir depuis l'hexadécimal*
+- *Développer de sorte à ne plus voir de chiffres*
 
-*Développer de sorte à ne plus voir de chiffres*
+- *Décoder le DeadFish*
 
-*Décoder le DeadFish*
-
-*Convertir depuis la Base 85*
+- *Convertir depuis la Base 85*
 
 ```
 Suivi de la séquence : 32 69 31 73 34 69 31 73 31 35 64 31 6f 34 39 69 31 6f 34 64 31 6f 33 69 31 6f 31 35 64 31 6f 32 32 64 31 6f 32 30 64 31 6f 31 39 69 31 6f 37 64 31 6f 35 64 31 6f 32 69 31 6f 35 35 69 31 6f 31 64 31 6f 31 39 64 31 6f 31 37 64 31 6f 31 38 64 31 6f 32 39 69 31 6f 31 32 69 31 6f 32 36 69 31 6f 38 64 31 6f 35 39 64 31 6f 32 37 69 31 6f 36 64 31 6f 31 37 69 31 6f 31 32 64 31 6f 37 64 31 6f 35 69 31 6f 31 64 31 6f 32 64 31 6f 31 32 69 31 6f 39 64 31 6f 32 36 64 31 6f
