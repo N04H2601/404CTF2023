@@ -30,7 +30,7 @@ Comme à mon habitude, j'ai simplement ouvert le fichier dans [Universal Radio H
 En zoomant, je reconnais tout de suite du morse :
 
 <p align="center">
-  <img src="zoom.png" alt="zoom spectrogramme urh" width="800" height="70">
+  <img src="zoom.png" alt="zoom spectrogramme urh" width="800" height="60">
 </p>
 
 Ce qui donne :
