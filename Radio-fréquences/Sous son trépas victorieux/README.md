@@ -25,7 +25,7 @@ La difficulté de ce challenge était d'identifier le type de données auxquelle
 
 Le SSTV (Slow Scan Television) est une technique utilisée pour transmettre des images via des signaux radio. Il fonctionne en divisant une image en lignes horizontales, puis en envoyant chaque ligne séquentiellement à travers une transmission radio. Les récepteurs SSTV reçoivent ces signaux et les reconstruisent pour afficher l'image complète. Cela permet de transmettre des images à travers de longues distances en utilisant des équipements radio relativement simples. Le SSTV est souvent utilisé par les radioamateurs et les passionnés de communication radio pour partager des images avec d'autres personnes à travers le monde.
 
-En me renseignant donc sur le [``SSTV``](https://www.sigidwiki.com/wiki/Slow-Scan_Television_(SSTV)), j'ai découvert un outil : [qsstv](https://doc.ubuntu-fr.org/qsstv). J'ai donc installé ce dernier et, après avoir démodulé le signal dans [URH](https://github.com/jopohl/urh), j'ai importé le fichier dans ``qsstv`` et laissé la magie opérer.
+En me renseignant donc sur le [SSTV](https://www.sigidwiki.com/wiki/Slow-Scan_Television_(SSTV)), j'ai découvert un outil : [qsstv](https://doc.ubuntu-fr.org/qsstv). J'ai donc installé ce dernier et, après avoir démodulé le signal dans [URH](https://github.com/jopohl/urh), j'ai importé le fichier dans qsstv et laissé la magie opérer.
 
 <p align="center">
   <img src="solution.png" alt="solution qsstv" width="600">
