@@ -31,7 +31,7 @@ Après beaucoup de recherches et de dorks Google, je tombe finalement sur le sit
   <img src="menu.jpg" alt="menu resto" width="400">
 </p>
 
-Il ne reste qu'à faire le calcul : les cuisses de grenouille à 15€ et la tarte tatin à 11€50, soit un total de 26€50.
+Il ne reste plus qu'à faire le calcul : les cuisses de grenouille à 15€ et la tarte tatin à 11€50, soit un total de 26€50.
 
 ## Flag
 
