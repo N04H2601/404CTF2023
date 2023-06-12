@@ -16,7 +16,7 @@
 
 ## Solution
 
-Pour résoudre ce challenge, j'ai d'abord identifié le numéro 83 écrits en chiffres romains, ainsi que la Rue Victor Hugo. N'ayant pas saisi les autres indices présents sur la lettre, je décide de rentrer l'adresse sur Google Maps : 83 Rue Victor Hugo Ve... (je laisse le moteur de recherche me proposer des résultats). Je tombe alors sur la ville de Vergèze comme premier résultat. Et parce que l'OSINT c'est parfois un peu de guessing aussi, il s'avère que c'était la bonne réponse.
+Pour résoudre ce challenge, j'ai d'abord identifié le numéro 83, écrit en chiffres romains, ainsi que la Rue Victor Hugo. N'ayant pas saisi les autres indices présents sur la lettre, je décide de rentrer l'adresse sur Google Maps : 83 Rue Victor Hugo Ve... (je laisse le moteur de recherche me proposer des résultats). Je tombe alors sur la ville de Vergèze comme premier résultat. Et parce que l'OSINT c'est parfois un peu de guessing aussi, il s'avère que c'était la bonne réponse.
 
 En y ayant repensé après avoir résolu le challenge, il me semble que l'adresse a tout simplement dû apparaître dans les premiers résultats grâce aux recherches des autres participants, alors merci à eux !
 
