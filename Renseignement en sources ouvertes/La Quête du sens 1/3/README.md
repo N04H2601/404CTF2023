@@ -14,7 +14,7 @@ Avant toute chose, je dois dire que pour cette première partie de la suite de c
 
 Bien que beaucoup de personnes aient utilisé un autre application de reconnaissance musicale (SoundHound), je n'ai pas résolu le challenge de cette manière. En effet, après avoir passé beaucoup de temps sur ce challenge, je décide de passer à un autre : Introspection. Quelle ne fut pas ma surprise lorsque je lis l'énoncé et découvre un nom commenant par *Mar*, comme dans l'énoncé de mon challenge d'OSINT : Marceline Desbordes-Valmore.
 
-Ce n'était sûrement qu'une simple coïncidence (notamment car d'autres prénoms féminins commençant par *Mar* sont présents dans d'autres énoncés, comme celui de Marguerite Yourcenar). Mais curieux de nature, je fais une rapide recherche sur ce nom : *Marceline Desbordes-Valmore chanson*. Je clique sur le [premier lien](https://www.youtube.com/watch?v=t-qbh3az3Rk), étonné d'avoir obtenu un résultat plausible. Je reconnais alors tout de suite le morceau et identifie le nom du texte : *Les Séparés*.
+Ce n'était sûrement qu'une simple coïncidence (notamment car d'autres prénoms féminins commençant par *Mar* sont présents dans d'autres énoncés, comme celui de Marguerite Yourcenar). Mais, curieux de nature, je fais une rapide recherche sur ce nom : *Marceline Desbordes-Valmore chanson*. Je clique sur le [premier lien](https://www.youtube.com/watch?v=t-qbh3az3Rk), étonné d'avoir obtenu un résultat plausible. Je reconnais alors tout de suite le morceau et identifie le nom du texte : *Les Séparés*.
 
 ## Flag
 
