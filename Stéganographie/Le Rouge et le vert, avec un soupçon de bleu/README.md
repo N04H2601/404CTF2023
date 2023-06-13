@@ -30,7 +30,7 @@ Pour le début en déchiffrant de décimal vers ASCII on obtient :
 ```
 L* flag
 ```
-On en déduit très simplement que WWW ser égal à ``e`` en décimal (101). On peut donc déchiffrer un peu plus de texte :
+On en déduit très simplement que WWW sera égal à ``e`` en décimal (101). On peut donc déchiffrer un peu plus de texte :
 
 ```
 76101321021089710332101115116581089795118RRR101951011109599BBBGGG108101GGG114115125
