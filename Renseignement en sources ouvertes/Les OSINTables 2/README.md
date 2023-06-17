@@ -24,11 +24,11 @@
 
 Pour résoudre ce challenge, je me rends sur le site [Epieos](https://epieos.com/) afin d'obtenir plus d'informations sur cette adresse mail. J'ai ainsi accès à son [calendrier](https://calendar.google.com/calendar/u/0/embed?src=jean.valjean750075@gmail.com). On trouve très vite des évènements dans son agenda la semaine du 15 mai :
 
-**- Passage au Conservatoire National Supérieur de Musique et de Danse de Paris (21 minutes de trajet)**
-**- Visite du Musée du Quai Branly (28 minutes de transports)**
-**- Lecture au Jardin du Luxembourg (25 minutes de ma station)**
-**- Repas chez Victor (32 minutes de déplacement)**
-**- Film au Cinéma Les 7 Batignolles (18 minutes de métro et de marche cumulées)**
+- **Passage au Conservatoire National Supérieur de Musique et de Danse de Paris (21 minutes de trajet)**
+- **Visite du Musée du Quai Branly (28 minutes de transports)**
+- **Lecture au Jardin du Luxembourg (25 minutes de ma station)**
+- **Repas chez Victor (32 minutes de déplacement)**
+- **Film au Cinéma Les 7 Batignolles (18 minutes de métro et de marche cumulées)**
 
 A partir des informations récupérées dans le calendrier je peux maintenant estimer une zone potentielle pour trouver son adresse :
 
