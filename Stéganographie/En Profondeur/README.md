@@ -19,7 +19,7 @@ On peut remarquer que le pattern n'est pas similaire pour certains mots dans les
 ## Vraie solution
 
 Après avoir discutés avec le créateur du challenge, il s'avère que la méthode qu'il fallait utiliser pour résoudre ce challenge est bien plus ingénieuse que ce que l'on croit. En effet, il a utilisé le principe des [autostéréogrammes](https://fr.wikipedia.org/wiki/Autost%C3%A9r%C3%A9ogramme), qui consite à voir une représentation en 3D d'une image 2D en modifiant son regard (au lieu de regarder l'image directement, il faut regarder au loin et déflouter sa vision jusqu'à voir l'image en 3D).
-Il y en a également qui sont constitués de deux images et il faut essayer de loucher pour voir la troisième image au milieu des deux autres (ce que je n'arrive toujours pas à faire).
+Il y en a également qui sont constitués de deux images et il faut essayer de loucher pour voir la troisième image au milieu des deux autres (ce que j'arrive maintenant à faire).
 Le créateur du challenge a donc utilisé ce principe appliqué au texte (stéréogramme ASCII) et le but était de visualiser un troisième bloc de texte au milieu des autres, sur lequel ressortait ainsi des mots (formant le flag).
 
 ## Flag
