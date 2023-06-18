@@ -33,7 +33,7 @@
 Pour commencer, je me rends sur l'adresse netcat pour avoir l'énoncé du challenge :
 
 <p align="center">
-  <img src="enonce.png" alt="enonce" width="800">
+  <img src="enonce.png" alt="enonce" width="1000">
 </p>
 
 Pour résoudre le challenge, il n'y a pas de secret, il faut scripter les règles données. J'ai donc réalisé le programme suivant :
