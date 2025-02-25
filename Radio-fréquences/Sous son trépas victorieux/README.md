@@ -35,7 +35,7 @@ En me renseignant donc sur le [SSTV](https://www.sigidwiki.com/wiki/Slow-Scan_Te
 
 Il faut importer le fichier ``.sigmf-data`` dans URH, le démoduler (changer ``Analog`` pour ``Demodulated``), puis faire un clic droit sur le graphique et cliquer sur ``Export demodulated`` pour obtenir le .wav en sortie. Bien faire attention à mettre les fichiers ``.sigmf-data`` et ``.sigmf-meta`` dans le même dossier avant de l'importer dans URH.
 
-Ensuite, il faut aller dans qsstv, dans configuration il faut changer le paramètres du sampling si besoin en fonction des informations donées dans le fichier ``.sigmf-meta``, et enfin cliquer sur l'option ``From file``.
+Ensuite, il faut aller dans qsstv, dans configuration il faut changer le paramètres du sampling si besoin en fonction des informations données dans le fichier ``.sigmf-meta``, et enfin cliquer sur l'option ``From file``.
 
 Il ne reste plus qu'à revenir sur la page d'accueil, appuyer sur play et importer son fichier ``.wav``.
 
